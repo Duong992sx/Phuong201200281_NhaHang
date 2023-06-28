@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add">
+
+    <TextView
+        android:id="@+id/tvSPNH"
+        android:layout_width="205dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="19dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvDiaChiNH"
+        app:layout_constraintStart_toStartOf="@+id/tvDiaChiNH"
+        app:layout_constraintTop_toBottomOf="@+id/tvDiaChiNH" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="123dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:text="Tên nhà hàng "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:text="Địa chỉ "
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="115dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="26dp"
+        android:text="Số phiếu "
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="118dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="18dp"
+        android:text="Điểm "
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnthem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="71dp"
+        android:text="Đánh giá  "
+        app:layout_constraintEnd_toStartOf="@+id/btnquayve"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <Button
+        android:id="@+id/btnquayve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="101dp"
+        android:text="quay về"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnthem"
+        app:layout_constraintTop_toBottomOf="@+id/editdiemDG" />
+
+    <TextView
+        android:id="@+id/tvTenNH"
+        android:layout_width="209dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="37dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDiaChiNH"
+        android:layout_width="204dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvTenNH"
+        app:layout_constraintStart_toStartOf="@+id/tvTenNH"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenNH" />
+
+    <EditText
+        android:id="@+id/editdiemDG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/tvSPNH"
+        app:layout_constraintStart_toStartOf="@+id/tvSPNH"
+        app:layout_constraintTop_toBottomOf="@+id/tvSPNH" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
